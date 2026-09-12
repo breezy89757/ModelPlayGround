@@ -1,0 +1,23 @@
+[project]
+name = "modelplayground"
+version = "0.1.0"
+description = "Pre-deployment evaluation for LLM features: adversarial test generation, rubric-decomposed judging with self-consistency, regression-aware prompt patching, and provider-agnostic export."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115",
+    "openai>=1.60",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+    "uvicorn[standard]>=0.32",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

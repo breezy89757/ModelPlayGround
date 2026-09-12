@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+out/
+runs/
+calibration/labels.jsonl
+.pytest_cache/
+0912.png
+docs/frames/
